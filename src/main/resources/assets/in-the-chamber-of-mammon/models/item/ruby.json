@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures":
+  {
+    "layer0": "in-the-chamber-of-mammon:item/ruby"
+  }
+}
