@@ -1,3 +1,6 @@
 {
-  "item.in-the-chamber-of-mammon.ruby": "Ruby"
+  "item.in-the-chamber-of-mammon.ruby": "Ruby",
+  "item.in-the-chamber-of-mammon.palacinky": "Palacinky",
+
+  "itemgroup.chamber": "In the Chamber of Mammon"
 }

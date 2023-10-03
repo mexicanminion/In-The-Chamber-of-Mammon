@@ -15,13 +15,18 @@ public class ModItems {
     //  ADDING ITEMS TO MINECRAFT
     // ----------------
     public static final Item RUBY = registerItem("ruby", new Item(new FabricItemSettings()));
+    public static final Item PALACINKY = registerItem("palacinky", new Item(new FabricItemSettings()));
 
     // ----------------
-    //  ADDING ITEMS TO CREATIVE MENU
+    //  ADDING ITEMS TO CREATIVE TAB MENU
     // ----------------
     private static void addItemsToIngredientTabItemGroup(FabricItemGroupEntries entries)
     {
         entries.add(RUBY);
+    }
+    private static void addItemsToFoodAndDrinksTabItemGroup(FabricItemGroupEntries entries)
+    {
+        entries.add(PALACINKY);
     }
 
     private static Item registerItem(String name, Item item)
@@ -33,7 +38,10 @@ public class ModItems {
     {
         InTheChamberOfMammon.LOGGER.info("Registering Mod Items for " + InTheChamberOfMammon.MOD_ID);
 
-        // Adds items to the Ingredients tab in the Creative Menu
+        // Adds items to the Ingredients tab in the Tab Menu
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemsToIngredientTabItemGroup);
+
+        // Adds items to the Food & Drinks tab in the Tab Menu
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(ModItems::addItemsToFoodAndDrinksTabItemGroup);
     }
 }

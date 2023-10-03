@@ -1,5 +1,6 @@
 package net.chamber;
 
+import net.chamber.item.ModItemGroups;
 import net.chamber.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -18,7 +19,7 @@ public class InTheChamberOfMammon implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
-
+		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
 	}
 }
