@@ -1,6 +1,8 @@
 {
+  "itemgroup.chamber": "In the Chamber of Mammon",
+
   "item.in-the-chamber-of-mammon.ruby": "Ruby",
   "item.in-the-chamber-of-mammon.palacinky": "Palacinky",
 
-  "itemgroup.chamber": "In the Chamber of Mammon"
+  "block.in-the-chamber-of-mammon.ruby_block": "Block of Ruby"
 }

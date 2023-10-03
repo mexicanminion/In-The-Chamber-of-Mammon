@@ -1,6 +1,7 @@
 package net.chamber.item;
 
 import net.chamber.InTheChamberOfMammon;
+import net.chamber.block.ModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
@@ -19,6 +20,9 @@ public class ModItemGroups {
             FabricItemGroup.builder().displayName(Text.translatable("itemgroup.chamber"))
                     .icon(() -> new ItemStack(ModItems.RUBY)).entries((displayContext, entries) -> {
                         entries.add(ModItems.RUBY);
+
+                        entries.add(ModBlocks.RUBY_BLOCK);
+
                         entries.add(ModItems.PALACINKY);
                     }).build());
 
